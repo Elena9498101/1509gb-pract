@@ -9,7 +9,7 @@ Console.Write("y ");
 int yC = Convert.ToInt32(Console.ReadLine());
 
 int quarter = Quarter(xC, yC);
-Console.WriteLine(quarter == 0 ? "введены не корректные координаты: " : quarter);
+Console.WriteLine(quarter == 0 ? "введены не корректные координаты" : quarter);
 
 int Quarter(int x, int y)
 {
