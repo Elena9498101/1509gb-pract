@@ -25,26 +25,10 @@ void PrintArray(int[] array)
     Console.WriteLine("]");
 }
 
-int[] GetSumPositiveNegativeElem(int[] array)
-{
-    int sumPositve = default;
-    int sumNegative = default;
-
-    for (int i = 0; i < array.Length; i++)
-    {
-        if (array[i] < 0) sumNegative += array[i]; // sumNegative = sumNegative + array[i]
-        else sumPositve += array[i]; // sumPositve = sumPositve + array[i];
-    }
-    return new int[] { sumPositve, sumNegative };
-}
-
-int[] arr = CreateArrayRndInt(12, -9, 9);
+int[] arr = CreateArrayRndInt(4, -9, 9);
 PrintArray(arr);
-int[] getSumPositiveNegativeElem = GetSumPositiveNegativeElem(arr);
-Console.WriteLine($"Сумма положительных элементов = {getSumPositiveNegativeElem[0]}");
-Console.WriteLine($"Сумма отрицательных элементов = {getSumPositiveNegativeElem[1]}");
 
-int[] ReverseSinght (int[] array)
+int[] ReverseSinght(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
